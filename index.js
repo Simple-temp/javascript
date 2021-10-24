@@ -83,4 +83,27 @@
 //     console.log(see);
 // }
 
-console.log ('hello');
+// console.log ('hello');
+
+// -------------------------------------------------------------Js function
+
+
+// function add(num1,num2)
+// {
+//     var getNum = num1;
+//     var getNum2 = num2;
+//     var result = getNum + getNum2;
+//     console.log(result);
+// }
+// add(56,35);
+
+function add(num1,num2)
+{
+    var getNum = num1;
+    var getNum2 = num2;
+    var result = getNum + getNum2;
+    return result;
+}
+
+var finalResult = add(65,88);
+console.log(finalResult);
