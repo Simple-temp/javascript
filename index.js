@@ -97,13 +97,27 @@
 // }
 // add(56,35);
 
-function add(num1,num2)
-{
-    var getNum = num1;
-    var getNum2 = num2;
-    var result = getNum + getNum2;
-    return result;
-}
+// function add(num1,num2)
+// {
+//     var getNum = num1;
+//     var getNum2 = num2;
+//     var result = getNum + getNum2;
+//     return result;
+// }
 
-var finalResult = add(65,88);
-console.log(finalResult);
+// var finalResult = add(65,88);
+// console.log(finalResult);
+
+// -------------------------------------------------------------Js factorial
+
+
+function factorial(num) {
+    var factorial = 1;
+    for (var i = 1 ; i<=num ; i++)
+    {
+        factorial = factorial * i ;
+    }
+    return factorial;
+}
+var result = factorial(9);
+console.log(result);
