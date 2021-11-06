@@ -126,32 +126,51 @@
 
 //1st foot to mile 
 
-function feetToMile(num) {
-    let getResult = num / 5280;
+// function feetToMile(num) {
+//     let getResult = num / 5280;
 
-    if(getResult<=1)
+//     if(getResult<=1)
+//     {
+//         return getResult + " mile";
+//     }
+//     else(getResult>1)
+//     {
+//         return getResult + " miles";
+//     }
+// }
+// let result = feetToMile(1000);
+// console.log(result);
+
+// //woodcalculator
+
+// function woodCalculator(chair,table,bed) {
+//     let getChair = chair*2;
+//     let getTable = table*3;
+//     let getBed = bed*4;
+//     let woodResult = getChair + getTable + getBed;
+//     return woodResult;
+// }
+// let result = woodCalculator(10,4,2);
+// console.log(result + total );
+
+//largerNumber 
+
+function largerNumber(num) {
+    let large = num[0];
+
+    for(let i=0; i<num.length ; i++)
     {
-        return getResult + " mile";
+        let numCharecter = num[i].length;
+
+        let element = numCharecter;
+
+        if (element<large)
+        {
+            large = element ;
+        }
     }
-    else(getResult>1)
-    {
-        return getResult + " miles";
-    }
+    return large;
 }
-let result = feetToMile(1000);
+
+let result = largerNumber(['roy','rd']);
 console.log(result);
-
-//woodcalculator
-
-function woodCalculator(chair,table,bed) {
-    let getChair = chair*2;
-    let getTable = table*3;
-    let getBed = bed*4;
-    let woodResult = getChair + getTable + getBed;
-    return woodResult;
-}
-let result = woodCalculator(10,4,2);
-console.log(result + total );
-
-//brickCalculator
-
